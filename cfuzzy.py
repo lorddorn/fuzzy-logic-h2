@@ -246,5 +246,5 @@ class MainHandler(tornado.web.RequestHandler):
             c = c + k
         self.write(str(c))
 application = tornado.wsgi.WSGIApplication([
-    (r"/", MainHandler),
+    (r"/cfuzzy", MainHandler),
 ])
